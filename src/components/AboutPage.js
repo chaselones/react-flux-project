@@ -8,6 +8,7 @@ class AboutPage extends React.Component {
       // Using the react fragment will only return the elements between the fragment
       <>
         <h2>About</h2>
+        <p>This app Uses React Router</p>
       </>
     );
   }
