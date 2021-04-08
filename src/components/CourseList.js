@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function CourseList(props) {
   return (
@@ -26,5 +27,25 @@ function CourseList(props) {
     </table>
   );
 }
+
+//Prop Types and default props
+//PropTypes and Shape:
+//Omit isRequired at the end if the prop type is optional
+CourseList.propTypes = {
+  courses: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+      authoId: PropTypes.number.isRequired,
+      category: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
+
+//default props
+//Will default to an empty array if we don't get an array of courses
+CourseList.defaultProps = {
+  courses: [],
+};
 
 export default CourseList;
