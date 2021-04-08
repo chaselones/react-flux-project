@@ -4,8 +4,9 @@ class AboutPage extends React.Component {
   render() {
     return (
       // React fragment below
+      // also works as: <React.Fragment></React.Fragment>
+      // Using the react fragment will only return the elements between the fragment
       <>
-        {/* using the react fragment will return only the H2 element */}
         <h2>About</h2>
       </>
     );

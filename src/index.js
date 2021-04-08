@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import HomePage from "./components/HomePage";
+import App from "./components/App";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import AboutPage from "./components/AboutPage";
 
-ReactDOM.render(<HomePage />, document.querySelector("#root"));
+ReactDOM.render(<App />, document.querySelector("#root"));
