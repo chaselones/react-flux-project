@@ -15,6 +15,7 @@ function App() {
         <Route path="/" exact component={HomePage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/courses" component={CoursesPage} />
+        {/* slug is our placeholder property name for our course: */}
         <Route path="/course/:slug" component={ManageCoursePage} />
         <Redirect from="/about-page" to="about" />
         <Route component={NotFoundPage} />

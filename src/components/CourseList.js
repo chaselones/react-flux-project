@@ -12,13 +12,13 @@ function CourseList(props) {
           <th>Category</th>
         </tr>
       </thead>
-
       <tbody>
         {/* Needs to be sent an array of courses on props, then outputs a table */}
         {props.courses.map((course) => {
           return (
             <tr key={course.id}>
               <td>
+                {/* slug is a placeholder property name for our course */}
                 <Link to={"/course/" + course.slug}>{course.title}</Link>
               </td>
               <td>{course.authorId}</td>
