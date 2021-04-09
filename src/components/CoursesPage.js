@@ -5,8 +5,6 @@ import CourseList from "./CourseList";
 function CoursesPage() {
   const [courses, setCourses] = useState([]);
 
-  //life cycle method for making API calls.  Component must be mounted before you can call
-  //set state.
   useEffect(() => {
     getCourses().then((_courses) => setCourses(_courses));
   }, []);
